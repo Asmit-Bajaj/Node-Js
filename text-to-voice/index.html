@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <br><br>
+    <h5 align=center>Please Select An Option to Start the Speech</h5>
+   <div style="width:90%;margin-left: 5%;margin-top:2%;">
+    <select id="select_lan" class="form-select" aria-label="Default select example" onchange="convert()">
+        <option value="">-- Select An Option ---</option>
+        <option value="english">English</option>
+        <option value="hindi">Hindi</option>
+        <option value="marathi">Marathi</option>
+    </select>
+   </div>
+
+   <br><br>
+   <div id="english">
+    The Taj Mahal, originally the Rauza-i-munawwara is an ivory-white marble mausoleum on the southern bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (reigned from 1628 to 1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.
+
+    Construction of the mausoleum was essentially completed in 1643, but work continued on other phases of the project for another 10 years. The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around 32 million rupees, which in 2020 would be approximately 70 billion rupees (about U.S. $956 million). The construction project employed some 20,000 artisans under the guidance of a board of architects led by the court architect to the emperor, Ustad Ahmad Lahauri.
+    
+    The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage". It is regarded by many as the best example of Mughal architecture and a symbol of India's rich history. The Taj Mahal attracts 7–8 million visitors a year and in 2007, it was declared a winner of the New 7 Wonders of the World (2000–2007) initiative.
+   </div>
+
+   <div id="hindi" style="display:none;">
+    ताजमहल, मूल रूप से रौजा-ए-मुनव्वारा भारतीय शहर आगरा में यमुना नदी के दक्षिणी तट पर एक हाथीदांत-सफेद संगमरमर का मकबरा है। इसे १६३२ में मुगल सम्राट शाहजहाँ (१६२८ से १६५८ तक शासन किया) द्वारा अपनी पसंदीदा पत्नी मुमताज महल की कब्र के लिए कमीशन किया गया था; इसमें स्वयं शाहजहाँ का मकबरा भी है। मकबरा 17-हेक्टेयर (42-एकड़) परिसर का केंद्रबिंदु है, जिसमें एक मस्जिद और एक गेस्ट हाउस शामिल है, और यह औपचारिक बगीचों में स्थापित है, जो तीन तरफ से एक सजी हुई दीवार से घिरा है। मकबरे का निर्माण अनिवार्य रूप से 1643 में पूरा हुआ था, लेकिन परियोजना के अन्य चरणों में अगले 10 वर्षों तक काम जारी रहा। माना जाता है कि ताजमहल परिसर 1653 में लगभग 32 मिलियन रुपये की अनुमानित लागत पर पूरी तरह से पूरा हो गया था, जो कि 2020 में लगभग 70 बिलियन रुपये (लगभग 956 मिलियन अमेरिकी डॉलर) होगा। निर्माण परियोजना ने सम्राट उस्ताद अहमद लाहौरी के दरबार के वास्तुकार के नेतृत्व में वास्तुकारों के एक बोर्ड के मार्गदर्शन में लगभग 20,000 कारीगरों को नियुक्त किया। ताजमहल को 1983 में "भारत में मुस्लिम कला का गहना और दुनिया की विरासत की सार्वभौमिक रूप से प्रशंसित उत्कृष्ट कृतियों में से एक" होने के लिए यूनेस्को की विश्व धरोहर स्थल के रूप में नामित किया गया था। इसे कई लोग मुगल वास्तुकला का सबसे अच्छा उदाहरण और भारत के समृद्ध इतिहास का प्रतीक मानते हैं। ताजमहल सालाना 7-8 मिलियन आगंतुकों को आकर्षित करता है और 2007 में, इसे विश्व के नए 7 अजूबों (2000-2007) की पहल का विजेता घोषित किया गया था।
+   </div>
+
+   <div id="marathi" style="display:none;">
+    मूळचा रौझा-ए-मुनव्वरा हा आग्रा शहरातील यमुना नदीच्या दक्षिणेकडील किना on्यावर एक हस्तिदंत-पांढरा संगमरवरी समाधी आहे. १ favorite32२ मध्ये मोगल सम्राट शाहजहांने (१28२28 ते १558 पर्यंत राज्य केले) त्यांच्या आवडत्या पत्नी मुमताज महल यांच्या समाधीसाठी हे काम सुरू केले; यात स्वतः शाहजहांची थडगे देखील आहे. ही समाधी १--हेक्टर (-२ एकर) संकुलाची केंद्रबिंदू आहे, ज्यामध्ये मशिद आणि अतिथीगृह आहे आणि तीन बाजूंनी बांधलेल्या भिंतींना औपचारिक बागांमध्ये लावले आहे. १us .43 मध्ये या समाधीस्थळाचे बांधकाम अनिवार्यपणे पूर्ण झाले होते, परंतु प्रकल्पाच्या इतर टप्प्यांवरील काम अजून १० वर्षे चालू राहिले. असे मानले जाते की ताजमहाल संकुल 1653 मध्ये पूर्ण झाले होते, त्यावेळी अंदाजे 32 दशलक्ष रुपये खर्च झाले होते, जे २०२० मध्ये अंदाजे billion० अब्ज रुपये (अंदाजे about $ $ कोटी) होते. या बांधकाम प्रकल्पात वास्तुविशारद मंडळाच्या नेतृत्वात सम्राट उस्ताद अहमद लाहौरी यांच्या नेतृत्वात सुमारे २०,००० कारागीर कामावर होते. १ 198 3 मध्ये ताजमहालला युनेस्कोच्या जागतिक वारसा स्थळ म्हणून नियुक्त केले गेले होते, "भारतातील मुस्लिम कलेचे दागिने आणि जगातील परंपरा असलेल्या जागतिक कलाकृतींपैकी एक" म्हणून. मुघल स्थापत्यकलेचे हे उत्तम उदाहरण आणि भारताच्या समृद्ध इतिहासाचे प्रतीक म्हणून बर्‍याच जणांकडून ते पाहिले जाते. ताजमहाल दर वर्षी 7-8 दशलक्ष अभ्यागतांना आकर्षित करते आणि 2007 मध्ये, हे न्यू 7 वंडर ऑफ द वर्ल्ड (2000-2007) उपक्रमात विजेते म्हणून घोषित झाले.
+   </div>
+   <script src="https://code.responsivevoice.org/responsivevoice.js?key=YHRWgEmP"></script>
+</body>
+
+<script>
+   
+    function start(lan){
+        if(lan == "english"){
+            document.getElementById("hindi").style.display = "none";
+            document.getElementById("english").style.display = "";
+            document.getElementById("marathi").style.display = "none";
+            responsiveVoice.speak(document.getElementById("english").textContent,"Hindi Female");
+        }else if(lan == "hindi"){
+            document.getElementById("hindi").style.display = "";
+            document.getElementById("english").style.display = "none";
+            document.getElementById("marathi").style.display = "none";
+            responsiveVoice.speak(document.getElementById("hindi").textContent,"Hindi Female");
+        }else{
+            document.getElementById("hindi").style.display = "none";
+            document.getElementById("english").style.display = "none";
+            document.getElementById("marathi").style.display = "";
+            responsiveVoice.speak(document.getElementById("marathi").textContent,"Hindi Female");
+        }
+    }
+
+    function convert(){
+        let ele = document.getElementById("select_lan").value;
+        start(ele);
+    }
+
+</script>
+
+</html>
