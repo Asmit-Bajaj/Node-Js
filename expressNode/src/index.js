@@ -2,14 +2,20 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const hbs = require("hbs");
 
 const staticPath = path.join(__dirname,"../public");
-const staticPath2 = path.join(__dirname,"../views");
-app.set('views',staticPath2);
+const templatePath = path.join(__dirname,"../templates/views");
+const partialsPath = path.join(__dirname,"../templates/partials");
+
+//register partial folder
+hbs.registerPartials(partialsPath);
 
 //now using hbs handle bars.js
-
 app.set('view engine','hbs');
+
+//changing views lookup directory
+app.set('views',templatePath);
 
 //middleware
 // app.use(express.static(staticPath));
@@ -18,14 +24,21 @@ app.set('view engine','hbs');
 app.get("/",(req,resp)=>{
     // replace variable name with value
     resp.status(200).render('index',{
-        name : "asmit"
+        name : "asmit",
     });
 });
 
-app.get("/",(req,resp)=>{
-    resp.status(200).send("<h1>Welcome to my home page</h1>");
+app.get("/about",(req,resp)=>{
+    resp.status(200).render('about');
 });
 
-app.listen(7000,()=>{
-    console.log("listening at port 7000");
+//for invalid url
+app.get("*",(req,resp)=>{
+    resp.status(404).render('404errorPage',{
+       errorComment : "This Page Doesn't Exist", 
+    });
+});
+
+app.listen(5000,()=>{
+    console.log("listening at port 5000");
 })
